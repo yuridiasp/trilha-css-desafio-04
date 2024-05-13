@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: 0;
+    list-style: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFFFFF;
+    background-image: url(assets/mobile/Header\ Background.svg);
+    gap: 1rem;
+    padding: 5rem 2rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+h1 {
+    font-family: "Luckiest Guy", cursive;
+}
+
+h2 {
+    font-weight: 800;
+    color: #23272A;
+}
+
+header button {
+    font-size: 0.6rem;
+    border-radius: 2rem;
+    width: 80vw;
+    padding: 0.5rem;
+    border: none;
+}
+
+#download-windows {
+    color: #23272A;
+}
+
+#open-navigator {
+    color: #FFFFFF;
+    background: #23272A;
+}
+
+footer {
+    background: #23272A;
+}
+
+@media screen and (min-width: 429px) {
+    header {
+        background-image: url(assets/pc/Header\ Background.svg);
+        align-items: center;
+    }
+
+    header div {
+        flex-direction: row;
+    }
+
+    header p {
+        max-width: 70vw;
+    }
+
+    header button {
+        width: 40vw;
+    }
+}
