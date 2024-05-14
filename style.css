@@ -14,7 +14,7 @@ header {
     flex-direction: column;
     justify-content: center;
     color: #FFFFFF;
-    background-image: url(assets/mobile/Header\ Background.svg);
+    background-image: url(assets/mobile/Header-Background.svg);
     gap: 1rem;
     padding: 5rem 2rem;
     background-size: cover;
@@ -31,6 +31,7 @@ header div {
 
 h1 {
     font-family: "Luckiest Guy", cursive;
+    font-size: 2rem;
 }
 
 h2 {
@@ -39,7 +40,7 @@ h2 {
 }
 
 header button {
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     border-radius: 2rem;
     width: 80vw;
     padding: 0.5rem;
@@ -55,13 +56,37 @@ header button {
     background: #23272A;
 }
 
+main > section:nth-child(even) {
+    background: #F6F6F6;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+main picture {
+    text-align: center;
+}
+
+main img {
+    max-width: 100%;
+}
+
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
     background: #23272A;
 }
 
-@media screen and (min-width: 429px) {
+@media screen and (min-width: 800px) {
     header {
-        background-image: url(assets/pc/Header\ Background.svg);
+        background-image: url(assets/pc/Header-Background.svg);
         align-items: center;
     }
 
@@ -75,5 +100,37 @@ footer {
 
     header button {
         width: 40vw;
+    }
+
+    main div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        max-width: 30vw;
+    }
+
+    main h2 {
+        font-size: 2rem;
+    }
+
+    main section:nth-child(odd), main section:nth-child(2) {
+        flex-direction: row;
+    }
+
+    main section:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+
+    main section:nth-child(4) {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main section:nth-child(4) div {
+        max-width: 50vw;
     }
 }
